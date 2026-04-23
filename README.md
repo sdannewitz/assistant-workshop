@@ -48,7 +48,6 @@ Think of Behaviors as personal house rules the Assistant always follows for _you
 
 - _"Always answer in bullet points."_
 - _"Assume I'm on the platform team."_
-- _"Never suggest Classic dashboards, always Scenes."_
 
 ### Create a Skill
 
@@ -100,7 +99,24 @@ This is the core exercise. We have a broken environment, and the Assistant is yo
 
 ---
 
-## 4. Zoom Out: What's Wrong With Your Environment?
+## 4. Build Something: Dashboarding with the Assistant
+
+Let the Assistant do the heavy lifting on a dashboard. Switch to **dashboarding mode** and try a prompt from one of the categories below.
+
+### What to try
+
+- **From scratch:** _"Create a service health dashboard for top 5 most used services with request rate, error rate, and p99 latency using Prometheus."_
+- **From a template:** _"Create a Golden Signals dashboard for my `payment-service`."_ or _"Build a USE Method infrastructure dashboard."_
+- **Modify an existing one:** _"Add a panel showing error rate by endpoint for the last 24 hours"_ or _"Group all panels into rows by signal type: Traffic, Errors, Latency, Saturation."_
+- **Specific to your environment:** _"Show the top 10 services by error rate from my Prometheus datasource."_
+
+### Tips
+
+- Specificity is everything. Name your **datasource**, **service**, **metric**, and **time range** — vague prompts produce vague dashboards.
+
+---
+
+## 5. (Bonus) Zoom Out: What's Wrong With Your Environment?
 
 Now ask the Assistant the broad, open-ended question:
 
